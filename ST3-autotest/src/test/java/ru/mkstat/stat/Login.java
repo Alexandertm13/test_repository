@@ -31,9 +31,9 @@ public class Login {
     driver.findElement(By.id("login-username")).sendKeys("admin");
     driver.findElement(By.id("btn-login")).click();
     driver.findElement(By.linkText("Данные статистики")).click();
-
+    findElement
   }
-//1
+
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();
