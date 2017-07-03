@@ -30,7 +30,8 @@ public class Login {
     driver.findElement(By.id("login-username")).clear();
     driver.findElement(By.id("login-username")).sendKeys("admin");
     driver.findElement(By.id("btn-login")).click();
-    driver.findElement(By.linkText("Данные статистики")).click();
+    driver.findElement(By.linkText("Данные статистики111")).click();
+
   }
 //1
   @AfterClass(alwaysRun = true)
