@@ -1,14 +1,13 @@
 package ru.mkstat.stat;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-
-import static org.testng.Assert.fail;
 
 public class Login {
   private WebDriver driver;
@@ -31,17 +30,15 @@ public class Login {
     driver.findElement(By.id("login-username")).sendKeys("admin");
     driver.findElement(By.id("btn-login")).click();
     driver.findElement(By.linkText("Данные статистики")).click();
-    findElement
+
   }
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();
-    String verificationErrorString = verificationErrors.toString();
-    if (!"".equals(verificationErrorString)) {
-      fail(verificationErrorString);
+
     }
   }
 
 
-}
+

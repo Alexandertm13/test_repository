@@ -35,8 +35,8 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/mkstat/stat/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -500,6 +500,12 @@
     <history-entry file="Login - 2017.07.03 at 16h 50m 04s.xml">
       <configuration name="Login" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Login - 2017.07.03 at 17h 17m 45s.xml">
+      <configuration name="Login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Login - 2017.07.03 at 17h 17m 58s.xml">
+      <configuration name="Login" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -569,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/mkstat/stat/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
