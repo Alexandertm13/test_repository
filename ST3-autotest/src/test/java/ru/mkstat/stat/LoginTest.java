@@ -25,7 +25,7 @@ public class LoginTest {
   public void testUntitled() throws Exception {
     driver.get("http://192.168.50.45/");
     driver.findElement(By.id("login-password")).clear();
-    driver.findElement(By.id("login-password")).sendKeys("master11");
+    driver.findElement(By.id("login-password")).sendKeys("master");
     driver.findElement(By.id("login-username")).clear();
     driver.findElement(By.id("login-username")).sendKeys("admin");
     driver.findElement(By.id("btn-login")).click();
