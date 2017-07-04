@@ -4,10 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ApplicationManager {
 //    FirefoxDriver wd;
-    ChromeDriver wd;
+    FirefoxDriver wd;
 
     public static boolean isAlertPresent(ChromeDriver wd) {
         try {
@@ -28,8 +24,8 @@ public class ApplicationManager {
     }
 
     public void init() {
- //       wd = new FirefoxDriver();
-        wd = new ChromeDriver();
+       wd = new FirefoxDriver();
+       // wd = new ChromeDriver();
         wd.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         wd.manage().timeouts().setScriptTimeout(50, TimeUnit.SECONDS);
         wd.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
