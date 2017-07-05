@@ -13,9 +13,14 @@ import java.util.concurrent.TimeUnit;
 
 
 public class LoginTest {
-  WebDriver driver;
-  String baseUrl;
-  StringBuffer verificationErrors = new StringBuffer();
+
+
+
+
+
+  private WebDriver driver;
+  private String baseUrl;
+  private StringBuffer verificationErrors = new StringBuffer();
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
