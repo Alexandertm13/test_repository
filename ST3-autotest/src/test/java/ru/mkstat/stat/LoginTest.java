@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class LoginTest {
-  WebDriver driver = new FirefoxDriver();
+  WebDriver driver;
   String baseUrl;
   StringBuffer verificationErrors = new StringBuffer();
 
