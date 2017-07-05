@@ -9,10 +9,13 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+
+
+
 public class LoginTest {
-  private WebDriver driver;
-  private String baseUrl;
-  private StringBuffer verificationErrors = new StringBuffer();
+  WebDriver driver = new FirefoxDriver();
+  String baseUrl;
+  StringBuffer verificationErrors = new StringBuffer();
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
