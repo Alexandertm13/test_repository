@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="ru.mkstat.stat.LoginTest" duration-ms="10065" started-at="2017-07-11T09:03:57Z" finished-at="2017-07-11T09:04:07Z">
+  <suite name="ru.mkstat.stat.LoginTest" duration-ms="9047" started-at="2017-07-11T09:13:04Z" finished-at="2017-07-11T09:13:13Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="10065" started-at="2017-07-11T09:03:57Z" finished-at="2017-07-11T09:04:07Z">
+    <test name="Command line test" duration-ms="9047" started-at="2017-07-11T09:13:04Z" finished-at="2017-07-11T09:13:13Z">
       <class name="ru.mkstat.stat.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.mkstat.stat.LoginTest@3498ed]" name="setUp" is-config="true" duration-ms="5863" started-at="2017-07-11T12:03:57Z" finished-at="2017-07-11T12:04:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.mkstat.stat.LoginTest@506e6d5e]" name="setUp" is-config="true" duration-ms="4807" started-at="2017-07-11T12:13:04Z" finished-at="2017-07-11T12:13:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.mkstat.stat.LoginTest@3498ed]" name="testUntitled" duration-ms="3391" started-at="2017-07-11T12:04:03Z" finished-at="2017-07-11T12:04:06Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:ru.mkstat.stat.LoginTest@506e6d5e]" name="testUntitled" duration-ms="3326" started-at="2017-07-11T12:13:09Z" finished-at="2017-07-11T12:13:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.mkstat.stat.LoginTest@3498ed]" name="tearDown" is-config="true" duration-ms="795" started-at="2017-07-11T12:04:06Z" finished-at="2017-07-11T12:04:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.mkstat.stat.LoginTest@506e6d5e]" name="tearDown" is-config="true" duration-ms="907" started-at="2017-07-11T12:13:12Z" finished-at="2017-07-11T12:13:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
