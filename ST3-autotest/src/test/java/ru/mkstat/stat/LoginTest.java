@@ -24,7 +24,7 @@ public class LoginTest { ChromeDriver wd;
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver",  "\\Users\\artur\\Desktop\\buildAgent\\chromedriver");
+    System.setProperty("webdriver.chrome.driver",  "\\Users\\artur\\Desktop\\buildAgent\\chromedriver.zip");
     wd = new ChromeDriver();
     baseUrl = "http://192.168.50.45/";
     wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
