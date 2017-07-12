@@ -2,7 +2,7 @@ package ru.mkstat.stat;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
-public class LoginTest {
+public class LoginTest { ChromeDriver wd;
 
 
 
@@ -24,26 +24,27 @@ public class LoginTest {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+    System.setProperty("webdriver.chrome.driver",  "\\Users\\artur\\Desktop\\buildAgent\\chromedriver");
+    wd = new ChromeDriver();
     baseUrl = "http://192.168.50.45/";
-    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
 
   @Test
   public void testUntitled() throws Exception {
-    driver.get("http://192.168.50.45/");
-    driver.findElement(By.id("login-password")).clear();
-    driver.findElement(By.id("login-password")).sendKeys("master");
-    driver.findElement(By.id("login-username")).clear();
-    driver.findElement(By.id("login-username")).sendKeys("admin");
-    driver.findElement(By.id("btn-login")).click();
-    driver.findElement(By.linkText("Данные статистики")).click();
+    wd.get("http://192.168.50.45/");
+    wd.findElement(By.id("login-password")).clear();
+    wd.findElement(By.id("login-password")).sendKeys("master");
+    wd.findElement(By.id("login-username")).clear();
+    wd.findElement(By.id("login-username")).sendKeys("admin");
+    wd.findElement(By.id("btn-login")).click();
+    wd.findElement(By.linkText("Данные статистики")).click();
 
   }
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
-    driver.quit();
+    wd.quit();
 
     }
   }
