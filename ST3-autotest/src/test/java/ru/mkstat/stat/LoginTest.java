@@ -3,6 +3,7 @@ package ru.mkstat.stat;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -26,7 +27,9 @@ public class LoginTest { ChromeDriver wd;
   public void setUp() throws Exception {
     System.setProperty("webdriver.chrome.driver", "/Users/artur/Desktop/buildAgent/chromedriver");
     //System.setProperty("webdriver.chrome.driver", "\\Project\\chromedriver.exe");
-    wd = new ChromeDriver();
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("start-maximized");
+    wd = new ChromeDriver(options);
     baseUrl = "http://192.168.50.45/";
     wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
