@@ -22,7 +22,7 @@ public class CreateUserTest { ChromeDriver wd;
   public void setUp() throws Exception {
 
    System.setProperty("webdriver.chrome.driver", "\\Project\\chromedriver.exe");
-    ChromeOptions options = new ChromeOptions(); //1
+    ChromeOptions options = new ChromeOptions();
    options.addArguments("--start-maximized");
   //options.addArguments("start-fullscreen");
     wd = new ChromeDriver(options);
@@ -68,4 +68,4 @@ public class CreateUserTest { ChromeDriver wd;
     }
   }
 
-
+//55656565
